@@ -4,8 +4,6 @@ import java.util.LinkedList;
 import java.util.Scanner;
 
 //Name: Benjamin Lerner
-//UNI: bll2121
-//Programming Assignment 1
 
 public class TwoParamObj<AnyType extends Comparable<? super AnyType>>
 {
@@ -38,7 +36,7 @@ public class TwoParamObj<AnyType extends Comparable<? super AnyType>>
 	 * @param t the node that roots the subtree.
 	 * @return the new root of the subtree.
 	 */
-	
+
 	//note how it takes a "line" int as well
 	private MyNode<AnyType> insert( AnyType x, int line, MyNode<AnyType> t )
 	{
@@ -60,7 +58,7 @@ public class TwoParamObj<AnyType extends Comparable<? super AnyType>>
 		return balance( t );
 
 	}
-	
+
 	//adds a line int a node's linkedlist
 	public void addLine(int line, MyNode<AnyType> t) {
 		t.lineList.add(line);
